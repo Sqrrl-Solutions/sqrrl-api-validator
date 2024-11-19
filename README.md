@@ -4,7 +4,7 @@ Docker container action to Validate API descriptions
 
 ## Overview
 
-This GitHub Action uses [Spectral](https://github.com/stoplightio/spectral) to lint OpenAPI Specification (OAS) files. It supports JSON/YAML formats and provides out-of-the-box support for OpenAPI 3.x and 2.0.
+This GitHub Action uses [Spectral](https://github.com/stoplightio/spectral) to lint OpenAPI Specification (OAS) files. It supports JSON/YAML formats and provides out-of-the-box support for OpenAPI 3.x and 2.0
 
 ## Usage
 
