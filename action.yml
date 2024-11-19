@@ -1,5 +1,5 @@
 name: 'Open API Specification Lint action'
-description: 'JSON/YAML linter with out of the box support for OpenAPI 3.x and 2.0, Arazzo and AsyncAPI'
+description: 'JSON/YAML linter with out of the box support for OpenAPI 3.x and 2.0'
 branding:
   icon: 'code'
   color: 'blue'
