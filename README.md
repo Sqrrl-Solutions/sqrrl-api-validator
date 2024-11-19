@@ -8,7 +8,7 @@ This GitHub Action uses [Spectral](https://github.com/stoplightio/spectral) to l
 
 ## Usage
 
-To use this action in your GitHub workflow, add the following step to your `.github/workflows/your-workflow.yml` file:
+To use this action in your GitHub workflow, add the following step to your `.github/workflows/build.yml` file:
 
 ```yaml
 name: Build and Test
