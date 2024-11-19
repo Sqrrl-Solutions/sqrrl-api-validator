@@ -1,7 +1,10 @@
 FROM alpine:3.20
 
-RUN npm install -g @stoplight/spectral-cli
+RUN apk add nodejs npm \
+    && npm install -g @stoplight/spectral-cli
 
 COPY entrypoint.sh /entrypoint.sh
+
+COPY package*.json ./
 
 ENTRYPOINT ["/entrypoint.sh"]
