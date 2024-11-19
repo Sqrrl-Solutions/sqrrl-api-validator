@@ -11,16 +11,20 @@ This GitHub Action uses [Spectral](https://github.com/stoplightio/spectral) to l
 To use this action in your GitHub workflow, add the following step to your `.github/workflows/your-workflow.yml` file:
 
 ```yaml
-name: Lint OpenAPI Specification
-on: [push, pull_request]
+name: Build and Test
+on:
+  workflow_call:
+  push:
+    branches-ignore:
+      - main
 jobs:
-  lint:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
       - name: Lint OpenAPI file
-        uses: ./ # Uses an action in the root directory
+        uses: ./visku-api-validator
         with:
           file_path: 'path/to/your/openapi/file.yaml'
