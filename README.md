@@ -25,6 +25,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Lint OpenAPI file
-        uses: ./visku-api-validator
+        uses: Bis-Henderson/visku-api-validator/@v1
         with:
-          file_path: 'path/to/your/openapi/file.yaml'
+          file_path: 'path/to/your/openapi/file.json'
+
+## License
+
+See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
