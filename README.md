@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Lint OpenAPI file
-        uses: Bis-Henderson/visku-api-validator/@v1
+        uses: Bis-Henderson/visku-api-validator@v1
         with:
           file_path: 'path/to/your/openapi/file.json'
 
