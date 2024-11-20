@@ -28,7 +28,8 @@ jobs:
         uses: Bis-Henderson/visku-api-validator@v1
         with:
           file_path: 'path/to/your/openapi/file.json'
+```
 
 ## License
 
-See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
+See the [LICENSE.md](LICENSE.md) file for license rights and limitations (MIT).
