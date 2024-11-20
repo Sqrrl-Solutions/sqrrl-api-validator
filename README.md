@@ -27,4 +27,8 @@ jobs:
       - name: Lint OpenAPI file
         uses: ./visku-api-validator
         with:
-          file_path: 'path/to/your/openapi/file.yaml'
+          file_path: 'path/to/your/openapi/file.json'
+
+## License
+
+See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
