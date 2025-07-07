@@ -1,0 +1,6 @@
+[general]
+verbosity = 3
+ignore=T1,B6,body-min-length
+
+[title-match-regex]
+regex=^.*(?:FB|fb)-\d+.*

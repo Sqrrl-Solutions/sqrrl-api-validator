@@ -1,0 +1,23 @@
+﻿name: pre-commit
+
+on:
+  pull_request:
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v3
+      - name: Run Pre-commit
+        uses: pre-commit/action@v3.0.1
+        # This is needed as gitlint doesnt trigger by default with the rest
+        # https://jorisroovers.com/gitlint/0.19.x/commit_hooks/
+      - name: Run Pre-commit Gitlint Hook
+        uses: pre-commit/action@v3.0.1
+        env:
+          GITLINT_COMMITS: "${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}"
+        with:
+          extra_args: --hook-stage manual gitlint-ci

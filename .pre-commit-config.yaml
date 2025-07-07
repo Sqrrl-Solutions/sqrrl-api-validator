@@ -1,0 +1,17 @@
+﻿repos:
+  - repo: https://github.com/jorisroovers/gitlint
+    rev: v0.19.1
+    hooks:
+      - id: gitlint    # this is the regular commit-msg hook
+      - id: gitlint-ci  # hook for CI environments
+        verbose: true
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: no-commit-to-branch
+        args: 
+          - --pattern
+          - '^(?!.*(?:FB|fb)-\d+).+$'
+default_install_hook_types:
+  - pre-commit
+  - commit-msg
