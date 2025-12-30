@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Lint OpenAPI file
-        uses: Sqrrl-Solutions/sqrrl-api-validator@v1
+        uses: Sqrrl-Solutions/sqrrl-api-validator@v2
         with:
           file_path: 'path/to/your/openapi/file.json'
 ```
