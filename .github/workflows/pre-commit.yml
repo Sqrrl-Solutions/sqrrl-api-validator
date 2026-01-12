@@ -1,4 +1,4 @@
-﻿name: pre-commit
+name: pre-commit
 
 on:
   pull_request:
@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: actions/setup-python@v3
+      - uses: actions/setup-python@v6
       - name: Run Pre-commit
         uses: pre-commit/action@v3.0.1
         # This is needed as gitlint doesnt trigger by default with the rest
